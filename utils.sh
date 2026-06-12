@@ -27,17 +27,24 @@ progress_bar() {
     local total=35
     local bar_width=30
     for i in $(seq 1 $total); do
-        filled=$(( bar_width * i / total ))
-        arrow=""
-        [ $filled -gt 1 ] && arrow=$(printf '%0.s=' $(seq 1 $(( filled - 1 ))))
-        [ $filled -gt 0 ] && arrow="${arrow}>"
-        empty=$(printf '%0.s.' $(seq 1 $(( bar_width - filled ))))
-        pct=$(( 100 * i / total ))
+        local filled=$(( bar_width * i / total ))
+        local empty=$(( bar_width - filled ))
+        local pct=$(( 100 * i / total ))
+
+        # Build gradient bar: ▓▓▓▒▒░░░ + spaces
+        local bar=""
+        local heavy=$(( filled * 6 / 10 ))
+        local med=$(( filled - heavy ))
+        [ $heavy -gt 0 ] && bar+=$(printf '%0.s▓' $(seq 1 $heavy))
+        [ $med   -gt 0 ] && bar+=$(printf '%0.s▒' $(seq 1 $med))
+        [ $empty -gt 0 ] && bar+=$(printf '%0.s░' $(seq 1 $empty))
+
         if   [ $pct -lt 40 ]; then bc="${R}"
         elif [ $pct -lt 80 ]; then bc="${Y}"
         else bc="${G}"; fi
-        printf "\r  ${W}%-22s${RST}  ${bc}${B}[%-30s]${RST}  ${W}%3d%%${RST}" \
-               "$label" "${arrow}${empty}" "$pct"
+
+        printf "\r  ${W}%-22s${RST}  ${bc}${B}[%s]${RST}  ${W}%3d%%${RST}" \
+               "$label" "$bar" "$pct"
         sleep 0.03
     done
     echo ""

@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # ─────────────────────────────────────────
-#  GIT-GET — banner.sh  (Shadow block style)
+#  GIT-GET — banner.sh  (3D Block with shadow)
 #  Dev: Md. Mainul Islam (CODEX-M41NUL)
 # ─────────────────────────────────────────
 
@@ -8,15 +8,15 @@ source "$(dirname "$0")/config.sh"
 source "$(dirname "$0")/utils.sh"
 
 print_banner() {
-# Shadow block style ASCII art
 echo -e "${Y}${B}"
-cat << 'BANNER'
-   ____  _____  ______            ____  __________
-  / ___\/  _/ |/ /_  /______ ___/ / /_/ __/_  __/
- / (_ // //    / / _/___/ -_) _  / __/ _/  / /
- \___/___/_/|_/ /___/   \__/\_,_/\__/___/ /_/
-BANNER
-echo -e "${DIM}${Y}   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░${RST}"
+echo "  ██████╗ ██╗████████╗        ██████╗ ███████╗████████╗"
+echo " ██╔════╝ ██║╚══██╔══╝       ██╔════╝ ██╔════╝╚══██╔══╝"
+echo " ██║  ███╗██║   ██║    ─────▶██║  ███╗█████╗     ██║   "
+echo " ██║   ██║██║   ██║          ██║   ██║██╔══╝     ██║   "
+echo " ╚██████╔╝██║   ██║          ╚██████╔╝███████╗   ██║   "
+echo "  ╚═════╝ ╚═╝   ╚═╝           ╚═════╝ ╚══════╝   ╚═╝   "
+echo -e "${DIM}${Y}  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░${RST}"
+echo -e "  ${W}[ v${VERSION} ]  GitHub Repo Downloader  |  ${Y}CODEX-M41NUL${RST}"
 echo ""
 }
 
@@ -48,9 +48,9 @@ print_info_box() {
     local title="${TOOL_NAME}  v${VERSION}  -  GitHub Repo Downloader"
     [ ${#title} -gt $(( W_BOX - 2 )) ] && W_BOX=$(( ${#title} + 4 ))
 
-    _border() { echo -e "  ${Y}${B}+$(printf '%0.s-' $(seq 1 $W_BOX))+${RST}"; }
-    _mid()    { echo -e "  ${Y}${B}+$(printf '%0.s-' $(seq 1 $W_BOX))+${RST}"; }
-
+    _border() {
+        echo -e "  ${Y}${B}+$(printf '%0.s-' $(seq 1 $W_BOX))+${RST}"
+    }
     _center() {
         local text="$1" tc="${2:-$G}"
         local vlen=${#text}
@@ -59,7 +59,6 @@ print_info_box() {
         printf "  ${Y}${B}|${RST}%*s${tc}${B}%s${RST}%*s${Y}${B}|${RST}\n" \
                "$lpad" "" "$text" "$rpad" ""
     }
-
     _row() {
         local label="$1" value="$2" lc="${3:-$Y}"
         local lpad=$(( label_w - ${#label} ))
@@ -71,12 +70,12 @@ print_info_box() {
 
     _border
     _center "$title"
-    _mid
+    _border
 
     local in_links=0
     for row in "${rows[@]}"; do
         if [ "$row" = "---" ]; then
-            _mid; in_links=1; continue
+            _border; in_links=1; continue
         fi
         local label="${row%%|*}"
         local value="${row#*|}"
@@ -95,7 +94,7 @@ print_info_box() {
         fi
     done
 
-    _mid
+    _border
     _center "$COPYRIGHT" "$Y"
     _border
     echo ""

@@ -1,11 +1,14 @@
 <div align="center">
 
 ```
-   ____  _____  ______            ____  __________
-  / ___\/  _/ |/ /_  /______ ___/ / /_/ __/_  __/
- / (_ // //    / / _/___/ -_) _  / __/ _/  / /
- \___/___/_/|_/ /___/   \__/\_,_/\__/___/ /_/
-  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  ██████╗ ██╗████████╗        ██████╗ ███████╗████████╗
+ ██╔════╝ ██║╚══██╔══╝       ██╔════╝ ██╔════╝╚══██╔══╝
+ ██║  ███╗██║   ██║    ─────▶██║  ███╗█████╗     ██║
+ ██║   ██║██║   ██║          ██║   ██║██╔══╝     ██║
+ ╚██████╔╝██║   ██║          ╚██████╔╝███████╗   ██║
+  ╚═════╝ ╚═╝   ╚═╝           ╚═════╝ ╚══════╝   ╚═╝
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  [ v1.0.0 ]  GitHub Repo Downloader  |  CODEX-M41NUL
 ```
 
 **GitHub Repository Downloader for Termux**
@@ -41,6 +44,7 @@
 - Accepts full URL or user/repo format
 - Auto-detects default branch (main or master)
 - Shows file count and size after download
+- Gradient block progress bar (Red to Yellow to Green)
 - Auto update check from GitHub on every launch
 - Smart installer — skips already installed packages
 - Yellow / Green / White color scheme
@@ -53,7 +57,7 @@
 GIT-GET/
 ├── git-get.sh     - Main entry point
 ├── config.sh      - Tool config and developer info
-├── banner.sh      - Shadow block ASCII banner + info box
+├── banner.sh      - 3D block shadow ASCII banner + info box
 ├── downloader.sh  - ZIP and folder download logic
 ├── utils.sh       - Colors, progress bar, helpers
 ├── updater.sh     - Auto update from GitHub

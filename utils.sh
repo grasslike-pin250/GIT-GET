@@ -67,9 +67,9 @@ spinner() {
 prompt_input() {
     local msg="$1"
     local example="$2"
-    [ -n "$example" ] && echo -e "\n  ${DIM}${W}Example : $example${RST}"
-    echo -ne "\n  ${Y}${B}>${RST}  ${W}${msg}${RST}  "
-    read -r val
+    [ -n "$example" ] && echo -e "\n  ${DIM}${W}Example : $example${RST}" >&2
+    echo -ne "\n  ${Y}${B}>${RST}  ${W}${msg}${RST}  " >&2
+    read -r val < /dev/tty
     echo "$val"
 }
 

